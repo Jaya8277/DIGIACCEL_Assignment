@@ -34,8 +34,7 @@ app.post("/questions", async(req,res)=>{
         OptionC,
         OptionD,
         correctAnswerOption,
-        attacmentImage,
-        attacmentVideo
+      
     }=req.body
 
     const data=new questionmodel({
@@ -45,8 +44,7 @@ app.post("/questions", async(req,res)=>{
         "OptionC": OptionC,
         "OptionD": OptionD,
         "correctAnswerOption": correctAnswerOption,
-        "attacmentImage": attacmentImage,
-        "attacmentVideo": attacmentVideo
+       
     })
    
     await data.save()

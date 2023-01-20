@@ -32,3 +32,6 @@ export const addQuestion = (payload) => async (dispatch) => {
       console.log(err);
     });
 };
+
+
+  // submit => dispatch(payload) => action 

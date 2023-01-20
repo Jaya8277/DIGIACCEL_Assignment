@@ -7,8 +7,6 @@ const questionSchema=new mongoose.Schema(    {
     OptionC: String,
     OptionD: String,
     correctAnswerOption: String,
-    attacmentImage:String,
-    attacmentVideo: String
   })
 
 const questionModel=mongoose.model("questions",questionSchema)
